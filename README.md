@@ -10,3 +10,5 @@ Authored by:
 - Zeuz Alexie M. Sulit
 
 This repository includes source codes from both Image Classification and Electronic Nose Systems. The Image Classification System uses transfer learning method Deep Learning CNN. On the other hand, the Electronic Nose System uses Machine Learning with Logistic Regression algorithm. The combined systems utilizes Soft Voting technique for final classification.  
+
+NOTE: The required dependencies that must be installed in the local or virtual environment are listed in 'requirements.txt'

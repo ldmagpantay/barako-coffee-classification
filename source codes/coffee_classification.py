@@ -166,13 +166,9 @@ class process:
 
     def softVoter(self, cl1_barako, cl1_notBarako, cl2_barako, cl2_notBarako):
 
-        pos = ((cl1_barako)*50) + ((cl2_barako)*50)
-        neg = ((cl1_notBarako)*50) + ((cl2_notBarako)*50)
-
-        if pos > neg:
-            output_index = 0
-        else:
-            output_index = 1
-        return output_index
+      barako = ((cl1_barako)*50) + ((cl2_barako)*50)
+      notBarako = ((cl1_notBarako)*50) + ((cl2_notBarako)*50)
+      
+      return barako
     #end of function
 #end of class

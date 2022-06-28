@@ -5,8 +5,6 @@ from tkinter import *
 
 directory = 'C:\\Users\\user\\Desktop\\coffee_classification'
 
-classes = ['BARAKO', 'NOT BARAKO']
-
 timer = input('Enter timer (s): ')
 
 def show_output(text_input):
@@ -28,7 +26,7 @@ def show_output(text_input):
     ws.iconbitmap(directory + '\\resources\\icons\\coffee-icon.ico')
     Label(
         ws,
-        text = text_input,
+        text = f'BARAKO\n{text_input} %',
         bg='white',
         font = ('Arial', 60, 'bold')
         ).pack(fill=BOTH, expand=True)
@@ -43,7 +41,5 @@ enose_predictions = cc.process(directory).enose_processing_ground(sensor_inputs)
 
 print(f'Sensor Inputs: {sensor_inputs}\nE-Nose Predictions: {enose_predictions}')
 
-final_output = classes[np.argmax(enose_predictions)]
-
 #show window
-show_output(final_output)
+show_output(enose_predictions[0][0])
